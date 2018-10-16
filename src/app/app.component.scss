@@ -1,0 +1,40 @@
+body, * {
+  font-size: 20px !important;
+}
+
+.topbar {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	color: #757575;
+	height: 75px;
+	padding: 12px 15px;
+	border-bottom: solid 1px #dee4e9;
+	z-index: 100;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	background-color: #003973;
+	background-image: -webkit-gradient(linear, left top, right top, from(#003973), to(#e5e5be));
+	background-image: -webkit-linear-gradient(left, #003973, #e5e5be);
+	background-image: -moz-linear-gradient(left, #003973, #e5e5be);
+	background-image: -ms-linear-gradient(left, #003973, #e5e5be);
+	background-image: -o-linear-gradient(left, #003973, #e5e5be);
+	background-image: linear-gradient(to right, #003973, #e5e5be);
+	filter: progid:DXImageTransform.Microsoft.gradient(start-colorStr='#003973', end-colorStr='#e5e5be', gradientType='1');
+
+	.user-display {
+		float: right;
+		text-align: right;
+		text-decoration: none;
+		display:table;
+
+		.username {
+			display:table-cell;
+			vertical-align:middle;
+			color: #757575;
+		}
+	}
+}

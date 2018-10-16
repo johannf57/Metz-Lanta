@@ -1,0 +1,22 @@
+@import '../../../assets/themes/_variables';
+
+.ui-g-form {
+	display: grid;
+	width: 100%;
+}
+
+.error {
+	color: $stateErrorTextColor;
+	padding: 0.2em;
+}
+
+.fa-caret-down:before {
+	content: "\F0D7";
+}
+
+.ui-center {
+  position: relative;
+  display: flex;
+  margin: auto;
+  line-height: 5rem;
+}

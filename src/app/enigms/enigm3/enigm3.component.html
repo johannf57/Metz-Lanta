@@ -1,0 +1,96 @@
+<form [formGroup]="enigm3Form" (ngSubmit)="onSubmit()" class="wizard">
+  <p-growl [value]="messages"></p-growl>
+  <div class="ui-fluid ui-g-12 card card-w-title ui-fluid">
+    <div class="step" id="question6" style="display: flex;flex-direction: row">
+      <h2><span id="q6q">Which domino is missing?</span></h2>
+      <div class="row">
+        <div class="col-sm-7 b-r">
+          <p></p>
+          <table>
+            <tbody>
+            <tr>
+              <td><span class="domino-large-2"><img src="https://www.mon-qi.com/img/domino/35-45.png"></span></td>
+              <td class="aligntop"><span class="domino-large-90"><img src="https://www.mon-qi.com/img/domino/61-90.png"></span>
+              </td>
+              <td>
+                <div id="img6"><span class="domino-large-2"><img src="https://www.mon-qi.com/img/domino/point-315.png"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="domino-large"><img src="https://www.mon-qi.com/img/domino/02-0.png"></span></td>
+              <td class="alignright"><span class="domino-large" style="margin-left: 50px"><img
+                src="https://www.mon-qi.com/img/domino/05-0.png"></span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><span class="domino-large-2"><img src="https://www.mon-qi.com/img/domino/46-315.png"></span></td>
+              <td><span class="domino-large-2"><img src="https://www.mon-qi.com/img/domino/13-45.png"></span></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+          <p></p>
+        </div>
+        <div class="col-sm-5" style="display: flex;flex-direction: column">
+          <p>1<sup>ère</sup> ligne :<br>
+            <label id="a6__0" for="a6_0" (click)="document.getElementById('a6_0').click();"><img
+              src="https://www.mon-qi.com/img/domino/00.png"></label>
+            <label id="a6__1" for="a6_1" (click)="document.getElementById('a6_1').click();"><img
+              src="https://www.mon-qi.com/img/domino/01.png"></label>
+            <label id="a6__2" for="a6_2" (click)="document.getElementById('a6_2').click();"><img
+              src="https://www.mon-qi.com/img/domino/02.png"></label>
+            <label id="a6__3" for="a6_3" (click)="document.getElementById('a6_3').click();"><img
+              src="https://www.mon-qi.com/img/domino/03.png"></label>
+            <label id="a6__4" for="a6_4" (click)="document.getElementById('a6_4').click();"><img
+              src="https://www.mon-qi.com/img/domino/04.png"></label>
+            <label id="a6__5" for="a6_5" (click)="document.getElementById('a6_5').click();"><img
+              src="https://www.mon-qi.com/img/domino/05.png"></label>
+            <label id="a6__6" for="a6_6" (click)="document.getElementById('a6_6').click();"><img
+              src="https://www.mon-qi.com/img/domino/06.png"></label><br>
+            <input type="radio" name="a6" id="a6_0" value="0" (click)="inputFirstDominoClick($event)" class="required">
+            <input type="radio" name="a6" id="a6_1" value="1" (click)="inputFirstDominoClick($event)" class="required">
+            <input type="radio" name="a6" id="a6_2" value="2" (click)="inputFirstDominoClick($event)" class="required">
+            <input type="radio" name="a6" id="a6_3" value="3" (click)="inputFirstDominoClick($event)" class="required">
+            <input type="radio" name="a6" id="a6_4" value="4" (click)="inputFirstDominoClick($event)" class="required">
+            <input type="radio" name="a6" id="a6_5" value="5" (click)="inputFirstDominoClick($event)" class="required">
+            <input type="radio" name="a6" id="a6_6" value="6" (click)="inputFirstDominoClick($event)" class="required">
+          </p>
+          <div>
+
+          </div>
+          <p>2<sup>ème</sup> ligne :<br>
+            <label id="b6__0" for="b6_0" (click)="document.getElementById('b6_0').click();"><img
+              src="https://www.mon-qi.com/img/domino/00.png"></label>
+            <label id="b6__1" for="b6_1" (click)="document.getElementById('b6_1').click();"><img
+              src="https://www.mon-qi.com/img/domino/01.png"></label>
+            <label id="b6__2" for="b6_2" (click)="document.getElementById('b6_2').click();"><img
+              src="https://www.mon-qi.com/img/domino/02.png"></label>
+            <label id="b6__3" for="b6_3" (click)="document.getElementById('b6_3').click();"><img
+              src="https://www.mon-qi.com/img/domino/03.png"></label>
+            <label id="b6__4" for="b6_4" (click)="document.getElementById('b6_4').click();"><img
+              src="https://www.mon-qi.com/img/domino/04.png"></label>
+            <label id="b6__5" for="b6_5" (click)="document.getElementById('b6_5').click();"><img
+              src="https://www.mon-qi.com/img/domino/05.png"></label>
+            <label id="b6__6" for="b6_6" (click)="document.getElementById('b6_6').click();"><img
+              src="https://www.mon-qi.com/img/domino/06.png"></label><br>
+            <input type="radio" name="b6" id="b6_0" value="0" (click)="inputDominoClick($event)" class="required">
+            <input type="radio" name="b6" id="b6_1" value="1" (click)="inputDominoClick($event)" class="required">
+            <input type="radio" name="b6" id="b6_2" value="2" (click)="inputDominoClick($event)" class="required">
+            <input type="radio" name="b6" id="b6_3" value="3" (click)="inputDominoClick($event)" class="required">
+            <input type="radio" name="b6" id="b6_4" value="4" (click)="inputDominoClick($event)" class="required">
+            <input type="radio" name="b6" id="b6_5" value="5" (click)="inputDominoClick($event)" class="required">
+            <input type="radio" name="b6" id="b6_6" value="6" (click)="inputDominoClick($event)" class="required"></p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: center">
+      <button pButton type="submit" label="Submit" title="Submit" [label]="'Submit'" [value]="'Submit'"
+              class="ui-shadow-2 ui-button ui-widget ui-state-default ui-corner-all"
+              style="width: 20%;margin-left: 25px"></button>
+    </div>
+  </div>
+  <div class="ui-fluid ui-grey" style="position: fixed; bottom: 10px; display: flex;margin: auto" *ngIf="showAnswer">
+    <input type="text" style="margin: auto" pInputText disabled value="Rue de Clercs"/>
+  </div>
+</form>

@@ -1,0 +1,33 @@
+@import '../../../assets/themes/_variables';
+
+.ui-g-form {
+	display: grid;
+	width: 100%;
+}
+
+.error {
+	color: $stateErrorTextColor;
+	padding: 0.2em;
+}
+
+.fa-caret-down:before {
+	content: "\F0D7";
+}
+
+.ui-center {
+  position: relative;
+  display: flex;
+  margin: auto;
+  line-height: 5rem;
+}
+
+.enigm2 {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  margin-left: 900px;
+  margin-top: 490px;
+  &.state-found {
+    border: 3px solid green;
+  }
+}

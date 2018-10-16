@@ -1,0 +1,29 @@
+<div class="topbar">
+	<a class="topbar-logo" routerlink="/" href="#/">
+		<svg viewBox="0 0 250 250" height="55px" width="55px">
+			<polygon points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2" fill="#C3002F"/>
+			<polygon
+				points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30" fill="#C3002F"/>
+			<path d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
+      L125,52.1z M142,135.4H108l17-40.9L142,135.4z" fill="#ffffff"/>
+		</svg>
+	</a>
+
+	<a href="#" class="user-display">
+		<span class="username">Johann FALANTIN</span>
+		<img src="assets/images/demo/avatar.svg" height="55px" width="55px" style="border: 0px;margin-left: 10px">
+	</a>
+</div>
+
+<div class="layout-wrapper layout-menu-static">
+
+	<div class="layout-main">
+		<app-menu></app-menu>
+
+		<div class="layout-content">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+
+	<div class="layout-mask" *ngIf="true"></div>
+</div>
