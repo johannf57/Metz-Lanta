@@ -1,13 +1,11 @@
 <form [formGroup]="enigm1Form" (ngSubmit)="onSubmit()">
   <div class="ui-fluid ui-g-12 card card-w-title ui-fluid">
-    <h1 style="display: flex; flex-direction: row; font-size: 20px;line-height: 2em">Enter your email and find the Password  -:- <p style="font-weight: 900;margin: unset; margin-left: 5px;margin-right: 5px">
+    <h1 style="display: flex; flex-direction: row; font-size: 20px;line-height: 2em">Hack the password<p style="font-weight: 900;margin: unset; margin-left: 5px;margin-right: 5px; color: white">
       UHJpYW0gRmFsYW50aW4=</p></h1>
-    <h2>You have to hack the password</h2>
     <div class="ui-g" style="display: flex">
       <div class="ui-g-12 card card-w-title ui-fluid ui-center">
         <p-growl [value]="messages"></p-growl>
-        <input type="text" formControlName="login" placeholder="Enter Your Email Address"/>
-        <input type="password" pPassword formControlName="pwd" placeholder="Enter Your Password"/>
+        <input type="password" pPassword formControlName="pwd" placeholder="Enter a password"/>
       </div>
     </div>
   </div>

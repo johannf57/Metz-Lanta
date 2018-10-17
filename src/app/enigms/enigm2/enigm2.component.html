@@ -1,23 +1,23 @@
 <form [formGroup]="enigm2Form" (ngSubmit)="onSubmit($event)">
-  <p-growl [value]="messages"></p-growl>
-  <div class="ui-fluid ui-g-12 card card-w-title ui-fluid">
-    <h1 style="display: flex; flex-direction: row; font-size: 20px;line-height: 2em">Find the
-      <p style="font-weight: 900;margin: unset; margin-left: 5px;margin-right: 5px">A A N D P</p> and click on it
-    </h1>
-    <h2>You have to find the right "snowman"</h2>
-    <div class="ui-g" style="display: flex">
-      <div class="ui-g-12 card card-w-title ui-fluid ui-center">
-        <img src="./../../../assets/images/enigm2/enigm2.png" width="800px" height="800px"
-             style="margin-left: auto;margin-right: auto">
-      </div>
+    <p-growl [value]="messages"></p-growl>
+    <div class="ui-fluid ui-g-12 card card-w-title ui-fluid">
+        <h1>Find the right "snowman"</h1>
+        <div class="ui-g" style="display: flex">
+            <div class="ui-g-12 card card-w-title ui-fluid ui-center"
+                 style="position: relative;width:800px;height:800px">
+                <img src="./../../../assets/images/enigm2/enigm2.png" width="800px" height="800px"
+                     style="margin-left: auto;margin-right: auto">
+                <div class="enigm2" [ngClass]="{'state-found' : true}" (click)="onPandaClick($event)">
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center">
+            <button pButton type="submit" label="Submit" class="ui-shadow-2"
+                    style="width: 20%;margin-left: 25px"></button>
+        </div>
+
     </div>
-    <div style="display: flex; flex-direction: row; justify-content: center">
-      <button pButton type="submit" label="Submit" class="ui-shadow-2" style="width: 20%;margin-left: 25px"></button>
+    <div class="ui-fluid ui-grey" style="position: fixed; bottom: 10px; display: flex;margin: auto" *ngIf="showAnswer">
+        <input type="text" style="margin: auto" pInputText disabled value="49.093209, 6.132650"/>
     </div>
-  </div>
-  <div class="enigm2" [ngClass]="{'state-found' : isFound}" (click)="onPandaClick($event)">
-  </div>
-  <div class="ui-fluid ui-grey" style="position: fixed; bottom: 10px; display: flex;margin: auto" *ngIf="showAnswer">
-    <input type="text" style="margin: auto" pInputText disabled value="49.093209, 6.132650"/>
-  </div>
 </form>

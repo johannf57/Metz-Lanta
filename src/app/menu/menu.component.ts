@@ -16,9 +16,9 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.model = [
       {label: 'Dashboard', icon: '', routerLink: ['/']},
-      {label: 'Enigm 1', icon: '', routerLink: ['/enigm1']},
-      {label: 'Enigm 2', icon: '', routerLink: ['/enigm2']},
-      {label: 'Enigm 3', icon: '', routerLink: ['/enigm3']}
+      {label: 'Game 1', icon: '', routerLink: ['/enigm1']},
+      {label: 'Game 2', icon: '', routerLink: ['/enigm2']},
+      {label: 'Game 3', icon: '', routerLink: ['/enigm3']}
     ];
   }
 }
