@@ -7,7 +7,7 @@
                  style="position: relative;width:800px;height:800px">
                 <img src="./../../../assets/images/enigm2/enigm2.png" width="800px" height="800px"
                      style="margin-left: auto;margin-right: auto">
-                <div class="enigm2" [ngClass]="{'state-found' : true}" (click)="onPandaClick($event)">
+                <div class="enigm2" [ngClass]="{'state-found' : isFound}" (click)="onPandaClick($event)">
                 </div>
             </div>
         </div>
