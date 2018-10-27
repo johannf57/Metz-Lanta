@@ -8,7 +8,7 @@ import {Enigm3Model} from '../model/enigm3.model';
 /**
  * rue des clercs
  * 49.116514, 6.170965
- * 49.116514, 6.170965
+ *  Le bouche à oreille
  * Taverne Maitre Kanter
  *
  * Service enigms

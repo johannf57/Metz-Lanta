@@ -1,11 +1,11 @@
 <form [formGroup]="enigm2Form" (ngSubmit)="onSubmit($event)">
     <p-growl [value]="messages"></p-growl>
-    <div class="ui-fluid ui-g-12 card card-w-title ui-fluid">
+    <div *ngIf="showGame" class="ui-fluid ui-g-12 card card-w-title ui-fluid">
         <h1>Find the right "snowman"</h1>
         <div class="ui-g" style="display: flex">
             <div class="ui-g-12 card card-w-title ui-fluid ui-center"
                  style="position: relative;width:800px;height:800px">
-                <img src="./../../../assets/images/enigm2/enigm2.jpg" width="800px" height="800px"
+                <img id="snowmanImg" src="./../../../assets/images/enigm2/enigm2.jpg" width="800px" height="800px"
                      style="margin-left: auto;margin-right: auto">
                 <div class="enigm2" [ngClass]="{'state-found' : isFound}" (click)="onPandaClick($event)">
                 </div>
@@ -16,6 +16,14 @@
                     style="width: 20%;margin-left: 25px"></button>
         </div>
 
+    </div>
+    <div *ngIf="!showGame">
+        <h2> Solve the GRADLE and call me to access the Game</h2>
+        <div class="ui-fluid ui-grey" style="position: fixed; width: 100%; display: flex;margin: auto">
+            <input type="text" pInputText #verso/>
+            <button pButton (click)="showVerso($event)" label="Show Game" class="ui-shadow-2" ([ngModel])="versoModel"
+                    style="width: 200px;margin-left: 25px"></button>
+        </div>
     </div>
     <div class="ui-fluid ui-grey" style="position: fixed; bottom: 10px; display: flex;margin: auto" *ngIf="showAnswer">
         <input type="text" style="margin: auto" pInputText disabled value="EJ.AJGAFA, G.BCGDJJ"/>
